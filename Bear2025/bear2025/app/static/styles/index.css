@@ -43,14 +43,34 @@ body {
 }
 
 /* Input and file upload styling */
+#displayImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 55%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .user-input-container,
 .user-image-upload {
+    width: min(5vw, 200px);
+    height: min(5vw, 200px);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
+    height: 5vh;
     margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.user-image-upload img {
+    width: 75%;
+    width: 75%;
+    object-fit: cover;
 }
 
 input[type="file"] {

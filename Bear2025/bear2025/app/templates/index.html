@@ -7,7 +7,7 @@
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'styles/index.css' %}">
-    <script src="{% static 'script.js' %}" defer></script>
+    <script src="{% static 'styles/script.js' %}" defer></script>
 </head>
 
 <body>
@@ -15,20 +15,15 @@
         <div class="header">
             G&R BEAR 2025 IMAGE UPSCALER (WOAH)
         </div>
-        <hr>
         
         <div class="user-input-container">
             <label for="imageInput">Choose Your Image</label>
-            <input type="file" id="imageInput" accept="image/*">
-        </div>
-
-        <div class="user-image-upload">
-            <label for="imageInput">Upload Another Image</label>
+            <br>
             <input type="file" id="imageInput" accept="image/*">
         </div>
 
         <div class="user-image-display">
-            <img id="displayImage" src="" alt="Image preview">
+            <img id="displayImage" src="">
         </div>
 
         <!-- Button to navigate to the next page -->

@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayImage.style.display = "block";
             };
             reader.readAsDataURL(file);
+        } else {
+            displayImage.style.display = "none"; // Hide image if no file selected
+            displayImage.src = "";
         }
     });
 });
