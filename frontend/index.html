@@ -1,7 +1,10 @@
 <html lang="en">
-
-<link rel="stylesheet" href="./styles/index.css">
-<link rel="script" href="script.js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
 
 <body>
     <div class="header">
@@ -9,7 +12,13 @@
     </div>
     <hr>
     <div class="user-input-container">
-        INPUT IMAGE
-        <input type="file" id="imageInput" accept="image/*">
+        <div class="user-image-upload">
+            INPUT IMAGE
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <div class="user-image-display">
+            <img id="displayImage" src="">
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
