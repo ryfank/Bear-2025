@@ -1,0 +1,117 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, rgba(14, 3, 22, 0.247), rgba(49, 25, 92, 0.536)), url('https://your-background-image-url.com') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(138, 126, 144, 0.6);
+    border-radius: 1.5em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+
+
+/* Header styling */
+.header {
+    font-size: 3vh;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Input and file upload styling */
+.user-input-container,
+.user-image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1.2vh;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #fff;
+}
+
+input[type="file"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Label styling */
+label {
+    font-size: 1.6vh;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Image display area */
+.user-image-display img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.2em;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-image-display img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styling */
+button {
+    padding: 14px 35px;
+    font-size: 1.6vh;
+    background-color: #635e78;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #635985;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Next page container */
+.next-page-container {
+    margin-top: 30px;
+}

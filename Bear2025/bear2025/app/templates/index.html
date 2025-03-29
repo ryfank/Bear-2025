@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+    <script src="{% static 'script.js' %}" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            G&R BEAR 2025 IMAGE UPSCALER (WOAH)
+        </div>
+        <hr>
+        
+        <div class="user-input-container">
+            <label for="imageInput">Choose Your Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <div class="user-image-upload">
+            <label for="imageInput">Upload Another Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <div class="user-image-display">
+            <img id="displayImage" src="" alt="Image preview">
+        </div>
+
+        <!-- Button to navigate to the next page -->
+        <div class="next-page-container">
+            <button onclick="window.location.href = '/nextpage/';">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
