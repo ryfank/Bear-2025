@@ -1,8 +1,21 @@
 /* General body styling */
+:root {
+    --shadow: rgba(0, 0, 0, 0.2);
+    --body-background: linear-gradient(135deg, rgba(14, 3, 22, 0.247), rgba(49, 25, 92, 0.536)), url('https://your-background-image-url.com') no-repeat center center fixed;
+    --font-color: #ffffff;
+    --container-color: rgba(138, 126, 144, 0.6);
+    --input-image: rgba(255, 255, 255, 0.3);
+    --input-image-hover: rgba(255, 255, 255, 0.4)
+    --button color: #9889cc;
+    --button-hover-color: #635985;
+    --button-shadow: rgba(0, 0, 0, 0.3);
+    --deep-shadow: rgba(0, 0, 0, 0.5);
+}
+
 body {
-    background: linear-gradient(135deg, rgba(14, 3, 22, 0.247), rgba(49, 25, 92, 0.536)), url('https://your-background-image-url.com') no-repeat center center fixed;
+    background: var(--body-background);
     background-size: cover;
-    color: #fff;
+    color: var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,21 +37,19 @@ body {
     width: 100%;
     max-width: 800px;
     padding: 30px;
-    background: rgba(138, 126, 144, 0.6);
+    background: var(--container-color);
     border-radius: 1.5em;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px var(--shadow);
     transition: all 0.3s ease;
     text-align: center;
 }
-
-
 
 /* Header styling */
 .header {
     font-size: 3vh;
     font-weight: 800;
     color: #ffffff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 10px var(--button-shadow);
     margin-bottom: 20px;
 }
 
@@ -78,14 +89,14 @@ input[type="file"] {
     padding: 12px;
     font-size: 1.2vh;
     border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--input-image);
+    background-color: var(--input-image);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    color: #fff;
+    color: var(--font-color);
 }
 
 input[type="file"]:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--input-image-hover);
     transform: scale(1.05);
 }
 
@@ -102,33 +113,33 @@ label {
     max-width: 100%;
     height: auto;
     border-radius: 1.2em;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 18px var(--button-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .user-image-display img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px var(--deep-shadow);
 }
 
 /* Button styling */
 button {
     padding: 14px 35px;
     font-size: 1.6vh;
-    background-color: #635e78;
-    color: white;
+    background-color: var(--button-color);
+    color: var(--font-color);
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px var(--shadow);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     text-transform: uppercase;
 }
 
 button:hover {
-    background-color: #635985;
+    background-color: var(--button-hover-color);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px var(--button-shadow);
 }
 
 /* Next page container */
