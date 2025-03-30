@@ -12,6 +12,50 @@
     --deep-shadow: rgba(0, 0, 0, 0.5);
 }
 
+.darkmode {
+    --shadow: rgba(222, 222, 222, 0.2);
+    --body-background: linear-gradient(135deg, rgba(11, 4, 15, 0.247), rgba(20, 11, 39, 0.536)), url('https://your-background-image-url.com') no-repeat center center fixed;
+    --font-color: #212121;
+    --container-color: rgba(128, 88, 148, 0.6);
+    --input-image: rgba(11, 11, 11, 0.3);
+    --input-image-hover: rgba(11, 11, 11, 0.4)
+    --button color: #9889cc;
+    --button-hover-color: #635985;
+    --button-shadow: rgba(222, 222, 222, 0.3);
+    --deep-shadow: rgba(222, 222, 222, 0.5);
+}
+
+#darkmode-toggle {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--body-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5em;
+    right: 7.5em;
+}
+
+#darkmode-toggle svg {
+    fill: var(--font-color);
+}
+
+#darkmode-toggle svg:last-child {
+    display: none;
+}
+
+.darkmode #darkmode-toggle svg:first-child {
+    display: none;
+}
+
+.darkmode #darkmode-toggle svg:last-child {
+    display: block;
+}
+
+
 body {
     background: var(--body-background);
     background-size: cover;
@@ -27,6 +71,10 @@ body {
     padding: 20px;
     overflow: hidden;
 }
+
+/* .header {
+
+} */
 
 /* Container styling */
 .container {

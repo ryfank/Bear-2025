@@ -1,3 +1,6 @@
+// =-=-=-=-=-=-=-=-= //
+// IMAGE IMPORT CODE //
+// =-=-=-=-=-=-=-=-==//
 document.addEventListener("DOMContentLoaded", function () {
     const imageInput = document.getElementById("imageInput");
     const displayImage = document.getElementById("displayImage");
@@ -17,3 +20,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// =-=-=-=-=-=-=-= //
+// DARK MODE CODE //
+// =-=-=-=-=-=-=-= //
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('darkmode-toggle')
+
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkmode', 'active')
+}
+
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkmode', null)
+}
+
+if(darkmode === "active") enableDarkmode()
+
+themeSwitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})
